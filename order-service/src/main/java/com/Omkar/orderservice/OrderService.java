@@ -1,5 +1,5 @@
 package com.Omkar.orderservice;
 
-public class Payment {
+public class OrderService {
 
 }
