@@ -10,17 +10,19 @@ public class Order {
     private Long userId;
     private String productName;
     private Double price;
-    //private orderStatus status;
+    private OrderStatus status;
 
     public Order(){
 
     }
 
-    public Order(Long id, Long userId, String productName, Double price) {
+    public Order(Long id, Long userId, String productName, Double price,OrderStatus status) {
         this.id = id;
         this.userId = userId;
         this.productName = productName;
         this.price = price;
+        this.status=status;
+
     }
 
     public Long getId() {
@@ -54,4 +56,11 @@ public class Order {
     public void setPrice(Double price) {
         this.price = price;
     }
+    public OrderStatus getStatus(){
+        return status;
+    }
+    public void setStatus(OrderStatus status){
+        this.status=status;
+    }
+
 }
