@@ -7,5 +7,5 @@ import org.springframework.web.bind.annotation.RequestBody;
 @FeignClient
 public interface PaymentClient {
     @PostMapping("/payments")
-    Payment createPayment( @RequestBody Payment payment);
+    void createPayment( @RequestBody Payment payment);
 }
