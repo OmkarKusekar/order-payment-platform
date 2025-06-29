@@ -1,15 +1,16 @@
 package com.Omkar.orderservice;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "\"order\"")
 public class Order {
     @Id
     private Long id;
     private Long userId;
     private String productName;
     private Double price;
+    @Enumerated(EnumType.STRING)
     private OrderStatus status;
 
     public Order(){
