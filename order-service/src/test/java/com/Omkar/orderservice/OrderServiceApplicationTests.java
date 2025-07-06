@@ -1,6 +1,5 @@
-package com.Omkar.order_service;
+package com.Omkar.orderservice;
 
-import com.Omkar.orderservice.OrderServiceApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
